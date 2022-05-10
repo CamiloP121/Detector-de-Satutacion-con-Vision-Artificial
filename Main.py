@@ -47,4 +47,3 @@ if __name__ == '__main__':
             Voice.say(Text)
             Voice.runAndWait()
             break
-    Obj_Cam.release()
