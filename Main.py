@@ -22,14 +22,14 @@ def Star():
     Voice.say(Text)
     Voice.runAndWait()
     # Si quieres que solo haga un conteo
-    '''for i in range(3):
+    for i in range(3):
         time.sleep(10)
         Text = str((i+1)*10)+'seconds'
         Voice.say(Text)
-        Voice.runAndWait()'''
+        Voice.runAndWait()
     # Si quieres con musica
-    path = os.getcwd() + '/records/espera_30seg.wav'
-    playsound(path)
+    '''path = os.getcwd() + r'/records/espera_30seg.wav'
+    playsound(path)'''
     return Obj_Cam,Voice
 # Despliegue menu aplicacion
 if __name__ == '__main__':
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # tiempo maximo 2 min
     inicio = time.time()
     while True:
-        txt = Obj_Cam.open_cam(True)
+        txt = Obj_Cam.open_cam()
         Voice.say(txt)
         Voice.runAndWait()
         time.sleep(2)
